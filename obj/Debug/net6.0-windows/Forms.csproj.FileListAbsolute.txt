@@ -1,0 +1,7 @@
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\obj\Debug\net6.0-windows\Forms.csproj.AssemblyReference.cache
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\obj\Debug\net6.0-windows\seufinanceiro2.frm_principal.resources
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\obj\Debug\net6.0-windows\Forms.csproj.GenerateResource.cache
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\obj\Debug\net6.0-windows\Forms.GeneratedMSBuildEditorConfig.editorconfig
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\obj\Debug\net6.0-windows\Forms.AssemblyInfoInputs.cache
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\obj\Debug\net6.0-windows\Forms.AssemblyInfo.cs
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\obj\Debug\net6.0-windows\Forms.csproj.CoreCompileInputs.cache
