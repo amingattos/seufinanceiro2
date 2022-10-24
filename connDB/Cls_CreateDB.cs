@@ -3,9 +3,9 @@ using System.Data.SqlClient;
 using System.Windows;
 using System.IO;
 
-namespace seufinanceiro.Controller
+namespace seufinanceiro2
 {
-    internal class Cls_CreateDB
+    public class Cls_CreateDB
     {
         String LinhaComandoSQL;
 
@@ -21,7 +21,7 @@ namespace seufinanceiro.Controller
 
             try
             {
-                foreach (string linha in File.ReadLines("db_seufinanceiro.txt"))
+                foreach (string linha in File.ReadLines("db_seufinanceiro.sql"))
                 {
                     commands[counter] = linha;
                     counter++;
@@ -91,12 +91,12 @@ namespace seufinanceiro.Controller
         }
         public SqlDataReader Db_seufinanceiro()
         {
-            Model.Cls_ConnDB_Sql ObjCreateDB = new Model.Cls_ConnDB_Sql();
+            Cls_ConnDB_Sql ObjCreateDB = new Cls_ConnDB_Sql();
             return ObjCreateDB.RetornaDataReaderMaster(LinhaComandoSQL);
         }
         public SqlDataReader Create_Tbl_Insert()
         {
-            Model.Cls_ConnDB_Sql ObjConnDB = new Model.Cls_ConnDB_Sql();
+            Cls_ConnDB_Sql ObjConnDB = new Cls_ConnDB_Sql();
             return ObjConnDB.RetornaDataReader(LinhaComandoSQL);
         }
     }

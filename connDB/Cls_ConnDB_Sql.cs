@@ -2,174 +2,83 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows;
+using connDB.Properties;
 
 
-namespace seufinanceiro.Model
+namespace ConnDB
 {
-    internal class Cls_ConnDB_Sql
+    public class Cls_ConnDB_Sql
     {
-        public static SqlConnection AbreBancoMaster() // Banco de dados Master
+        private SqlConnection ConnectionSQL()
         {
-            String StringConexao = @"Data Source=.\sqlExpress; Initial Catalog= master; Integrated Security= True";
-
-            try
-            {
-                SqlConnection conn = new SqlConnection(StringConexao);
-                conn.Open();
-                return conn;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            return new SqlConnection(Settings.Default.strConexao_db_seufinanceiro);
         }
 
-        public static SqlConnection AbreBanco()
-        {
-            String StringConexao = @"Data Source=.\sqlExpress; Initial Catalog= db_seufinanceiro; Integrated Security= True";
+        private SqlParameterCollection sqlParameterCollection = new SqlCommand().Parameters;
 
-            try
-            {
-                SqlConnection conn = new SqlConnection(StringConexao);
-                conn.Open();
-                return conn;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+        public void ClearParameters()
+        {
+            sqlParameterCollection.Clear();
         }
 
-        public void FechaBanco(SqlConnection conn)
+        public void AddParameters(string nameParameter, object valueParameter)
         {
-            try
-            {
-                if (conn.State == ConnectionState.Open)
-                { conn.Close(); }
-            }
-            catch (Exception e)
-            { throw e; }
+            sqlParameterCollection.Add(new SqlParameter(nameParameter, valueParameter));
         }
 
-        public DataSet RetornaDataSet(String strQuery)
+        public object ExecCommandDB(CommandType commandType, string nameStored)
         {
-            SqlConnection conn;
-            conn = AbreBanco();
             try
             {
-                DataSet ds = new DataSet();
-                SqlCommand cmdComando = new SqlCommand(strQuery, conn);
-                SqlDataAdapter da = new SqlDataAdapter(cmdComando);
-                da.Fill(ds);
-                return ds;
-            }
-            catch (Exception erro)
-            {
-                throw erro;
-            }
-            finally
-            {
-                FechaBanco(conn);
-            }
-        }
+                SqlConnection sqlConnection = ConnectionSQL();
+                sqlConnection.Open();
 
-        public SqlDataReader RetornaDataReader(String strquery)
-        {
-            try
-            {
-                SqlDataReader dr;
-                SqlCommand sqlComando = new SqlCommand(strquery, AbreBanco());
-                dr = sqlComando.ExecuteReader();
-                return dr;
-            }
-            catch (SqlException e)
-            {
-                for (int i = 0; i < e.Errors.Count; i++)
+                SqlCommand sqlCommand = sqlConnection.CreateCommand();
+
+                sqlCommand.CommandType = commandType;
+                sqlCommand.CommandText = nameStored;
+                sqlCommand.CommandTimeout = 60;
+
+                foreach (SqlParameter sqlParameter in sqlParameterCollection)
                 {
-                    //MessageBox.Show(e.Errors[i].Message, "Erro: " + e.Errors[i].Number.ToString(), MessageBoxButton.OK, MessageBoxImage.Information);
-
-                    if (e.Errors[i].Number == 4060)
-                    {
-                        MessageBox.Show("Banco de dados não existente! ", "Erro: " + e.Errors[i].Number.ToString(), MessageBoxButton.OK, MessageBoxImage.Information);
-
-                        Controller.Cls_CreateDB objCreateDB = new Controller.Cls_CreateDB();
-                        objCreateDB.CriarDB();
-
-                    }
-                    else if (e.Errors[i].Number == 18456)
-                    {
-                        MessageBox.Show("Falha ao conectar-se ao Banco de dados", "Erro: " + e.Errors[i].Number.ToString(), MessageBoxButton.OK, MessageBoxImage.Information);
-                    }
-                    //else if (e.Errors[i].Number == )
-                    //{
-
-                    //}
+                    sqlCommand.Parameters.Add(new SqlParameter(sqlParameter.ParameterName, sqlParameter.Value));
                 }
-                return null;
-                //throw e;
+
+                return sqlCommand.ExecuteScalar();
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                throw e;
+                throw new Exception(ex.Message);
             }
-        }
+        }       
         
-        public SqlDataReader RetornaDataReaderMaster(String strquery)
+        public DataTable ExecConsultDB(CommandType commandType, string nameStored)
         {
             try
             {
-                SqlDataReader dr;
-                SqlCommand sqlComando = new SqlCommand(strquery, AbreBancoMaster());
-                dr = sqlComando.ExecuteReader();
+                SqlConnection sqlConnection = ConnectionSQL();
+                sqlConnection.Open();
 
-                //MessageBox.Show("Banco de dados\nCriado com sucesso!");
+                SqlCommand sqlCommand = sqlConnection.CreateCommand();
 
-                return dr;
-            }
-            catch (SqlException e)
-            {
-                for (int i = 0; i < e.Errors.Count; i++)
+                sqlCommand.CommandType = commandType;
+                sqlCommand.CommandText = nameStored;
+                sqlCommand.CommandTimeout = 60;
+
+                foreach (SqlParameter sqlParameter in sqlParameterCollection)
                 {
-                    //MessageBox.Show(e.Errors[i].Message, "Erro: " + e.Errors[i].Number.ToString(), MessageBoxButton.OK, MessageBoxImage.Information);
-
-                    //if (e.Errors[i].Number == 1801)
-                    //{
-                    //    MessageBox.Show("Banco de dados já existe! ", "Atenção: " + e.Errors[i].Number.ToString(), MessageBoxButton.OK, MessageBoxImage.Information);
-                    //}
-                    ////else if (e.Errors[i].Number == )
-                    ////{
-                    ////    MessageBox.Show(e.Errors[i].Message, "Erro: " + e.Errors[i].Number.ToString(), MessageBoxButton.OK, MessageBoxImage.Information);
-                    ////}
-                    //else
-                    //{
-                    //    MessageBox.Show(e.Errors[i].Message, "Erro: " + e.Errors[i].Number.ToString(), MessageBoxButton.OK, MessageBoxImage.Information);
-                    //}
+                    sqlCommand.Parameters.Add(new SqlParameter(sqlParameter.ParameterName, sqlParameter.Value));
                 }
-                throw e;
-            }
-            catch (Exception e)
-            {
-                throw e;
-            }
-        }
 
-        public void ExecutaComando(String strquery)
-        {
-            SqlConnection conn;
-            conn = AbreBanco();
-            try
-            {
-                SqlCommand sqlConn = new SqlCommand(strquery, conn);
-                sqlConn.ExecuteNonQuery();
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
+                DataTable dataTable = new DataTable();
+                sqlDataAdapter.Fill(dataTable);
+                
+                return dataTable;
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                throw e;
-            }
-            //EM caso de erro ou não, o finally é executado para fechar a conexão com o BD
-            finally
-            {
-                FechaBanco(conn);
+                throw new Exception(ex.Message);
             }
         }
     }

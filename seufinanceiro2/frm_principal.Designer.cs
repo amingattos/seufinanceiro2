@@ -34,9 +34,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Name = "frm_principal";
             this.Text = "Seu Financeiro";
+            this.Load += new System.EventHandler(this.frm_principal_Load);
             this.ResumeLayout(false);
 
         }

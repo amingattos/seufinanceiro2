@@ -1,0 +1,4 @@
+CREATE PROCEDURE UserInsert	@usr VARCHAR(100), @pwd VARCHAR(1000) AS BEGIN INSERT INTO tbl_usr (usr, pwd) VALUES (@usr, @pwd) END
+CREATE PROCEDURE UserUpdate @id_usr INT, @usr VARCHAR(100), @pwd VARCHAR(1000) AS BEGIN UPDATE tbl_usr set usr = @usr, pwd = @pwd WHERE id_usr = @id_usr END
+CREATE PROCEDURE UserDelete @id_usr INT AS BEGIN DELETE FROM tbl_usr WHERE id_usr = @id_usr END
+CREATE PROCEDURE UserFindLogin @usr VARCHAR(100), @pwd VARCHAR(1000) AS BEGIN SELECT id_usr, usr, pwd FROM tbl_usr WHERE usr = @usr and pwd = @pwd END

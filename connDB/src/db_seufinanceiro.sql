@@ -29,6 +29,4 @@ CREATE TABLE tbl_settings (
 	notification_settings BIT NOT NULL
 );
 
-*******************************************
-SELECT * FROM TBL_WALLET
-
+--*******************************************
