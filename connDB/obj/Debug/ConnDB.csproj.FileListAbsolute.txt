@@ -1,2 +1,0 @@
-H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\connDB\obj\Debug\ConnDB.csproj.AssemblyReference.cache
-H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\connDB\obj\Debug\ConnDB.csproj.CoreCompileInputs.cache

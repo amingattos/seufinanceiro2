@@ -1,0 +1,2 @@
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache

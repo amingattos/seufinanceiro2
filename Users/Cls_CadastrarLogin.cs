@@ -1,6 +1,6 @@
 ﻿using System.Data.SqlClient;
 
-namespace seufinanceiro.Controller
+namespace DTO
 {
     internal class Cls_CadastrarLogin
     {
