@@ -1,0 +1,7 @@
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\DAL\bin\Debug\DAL.dll.config
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\DAL\bin\Debug\DAL.dll
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\DAL\bin\Debug\DAL.pdb
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\DAL\obj\Debug\DAL.dll
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\DAL\obj\Debug\DAL.pdb

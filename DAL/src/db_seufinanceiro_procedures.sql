@@ -76,6 +76,19 @@ AS BEGIN
 END
 
 CREATE PROCEDURE WalletFindAll
+	@id_usr_wallet INT
+AS BEGIN
+	SELECT * FROM tbl_wallet WHERE id_usr_wallet = @id_usr_wallet
+END
+
+CREATE PROCEDURE WalletFindName
+	@id_usr_wallet INT,
+	@name_wallet VARCHAR(50)
+AS BEGIN
+	SELECT * FROM tbl_wallet WHERE name_wallet LIKE '%' + @name_wallet + '%' AND id_usr_wallet = @id_usr_wallet
+END
+
+CREATE PROCEDURE WalletFindId
 	@id_wallet INT
 AS BEGIN
 	SELECT * FROM tbl_wallet WHERE id_wallet = @id_wallet
@@ -83,21 +96,60 @@ END
 
 --**************************************************************************--
 
+CREATE PROCEDURE BalanceInsert
+	@id_type_balance INT,
+	@id_wallet_balance INT,
+	@value_balance MONEY,
+	@date_balance DATE
+AS BEGIN
+	INSERT INTO tbl_balance (id_type_balance, id_wallet_balance, value_balance, date_balance) VALUES (@id_type_balance, @id_wallet_balance, @value_balance, @date_balance)
+END
+
+CREATE PROCEDURE BalanceUpdate
+	@id_balance INT,
+	@id_type_balance INT,
+	@id_wallet_balance INT,
+	@value_balance MONEY,
+	@date_balance DATE
+AS BEGIN 
+	UPDATE tbl_balance set id_type_balance = @id_type_balance, id_wallet_balance = @id_wallet_balance, value_balance = @value_balance, date_balance = @date_balance WHERE id_balance = @id_balance
+END
+
+CREATE PROCEDURE BalanceDelete
+	@id_balance INT
+AS BEGIN
+	DELETE FROM	tbl_balance WHERE id_balance = @id_balance
+END
+
+CREATE PROCEDURE BalanceFindAll
+AS BEGIN
+	SELECT * FROM tbl_balance
+END
+
+CREATE PROCEDURE BalanceFindWallet
+	@id_wallet_balance INT
+AS BEGIN
+	SELECT * FROM tbl_balance WHERE id_wallet_balance LIKE '%' + @id_wallet_balance + '%'
+END
+
+CREATE PROCEDURE BalanceFindValue
+	@value_balance MONEY
+AS BEGIN
+	SELECT * FROM tbl_balance WHERE value_balance LIKE '%' + @value_balance + '%'
+END
+
+CREATE PROCEDURE BalanceFindDate
+	@date_balance DATE
+AS BEGIN
+	SELECT * FROM tbl_balance WHERE date_balance = @date_balance
+END
 
 --*******************************************
 drop procedure 
 EXEC 
 
 
-
 --*******************************************
-CREATE TABLE tbl_balance (
-	id_balance INT NOT NULL IDENTITY PRIMARY KEY,
-	id_type_balance INT NOT NULL FOREIGN KEY REFERENCES tbl_type_balance(id_type_balance),
-	id_wallet_balance INT NOT NULL FOREIGN KEY REFERENCES tbl_wallet(id_wallet),
-	value_balance MONEY NOT NULL,
-	date_balance DATE NOT NULL
-);
 CREATE TABLE tbl_settings (
 	id_settings INT NOT NULL IDENTITY PRIMARY KEY,
 	id_usr_login INT NOT NULL FOREIGN KEY REFERENCES tbl_usr(id_usr) UNIQUE,

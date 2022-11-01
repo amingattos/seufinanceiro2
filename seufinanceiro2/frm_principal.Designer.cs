@@ -1,4 +1,4 @@
-﻿namespace seufinanceiro2
+﻿namespace UI
 {
     partial class frm_principal
     {
