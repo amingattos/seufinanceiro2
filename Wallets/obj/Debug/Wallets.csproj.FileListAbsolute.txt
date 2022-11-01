@@ -1,6 +1,0 @@
-H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\Wallets\bin\Debug\Wallets.dll
-H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\Wallets\bin\Debug\Wallets.pdb
-H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\Wallets\obj\Debug\Wallets.csproj.AssemblyReference.cache
-H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\Wallets\obj\Debug\Wallets.csproj.CoreCompileInputs.cache
-H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\Wallets\obj\Debug\Wallets.dll
-H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\Wallets\obj\Debug\Wallets.pdb
