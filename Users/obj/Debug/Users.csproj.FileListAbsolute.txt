@@ -1,6 +1,0 @@
-H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\Users\bin\Debug\Users.dll
-H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\Users\bin\Debug\Users.pdb
-H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\Users\obj\Debug\Users.csproj.AssemblyReference.cache
-H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\Users\obj\Debug\Users.csproj.CoreCompileInputs.cache
-H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\Users\obj\Debug\Users.dll
-H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\Users\obj\Debug\Users.pdb
