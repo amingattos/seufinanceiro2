@@ -1,0 +1,2 @@
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\obj\Debug\DAL.csproj.AssemblyReference.cache
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\obj\Debug\DAL.csproj.CoreCompileInputs.cache

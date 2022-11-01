@@ -41,7 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cls_CWallets.cs" />
+    <Compile Include="Cls_Wallet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View_Wallet_List.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

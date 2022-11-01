@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\seufinanceiro2\\Forms.csproj",
-      "projectName": "Forms",
-      "projectPath": "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\seufinanceiro2\\Forms.csproj",
+      "projectUniqueName": "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\seufinanceiro2\\UI.csproj",
+      "projectName": "UI",
+      "projectPath": "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\seufinanceiro2\\UI.csproj",
       "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
       "outputPath": "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\seufinanceiro2\\obj\\",
       "projectStyle": "PackageReference",
