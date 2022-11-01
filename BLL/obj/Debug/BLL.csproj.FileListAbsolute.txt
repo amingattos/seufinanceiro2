@@ -1,0 +1,12 @@
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\BLL\bin\Debug\BLL.dll
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\BLL\bin\Debug\BLL.pdb
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\BLL\bin\Debug\DAL.dll
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\BLL\bin\Debug\DTO.dll
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\BLL\bin\Debug\DAL.pdb
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\BLL\bin\Debug\DAL.dll.config
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\BLL\bin\Debug\DTO.pdb
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\BLL\obj\Debug\BLL.csproj.CopyComplete
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\BLL\obj\Debug\BLL.dll
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\BLL\obj\Debug\BLL.pdb
