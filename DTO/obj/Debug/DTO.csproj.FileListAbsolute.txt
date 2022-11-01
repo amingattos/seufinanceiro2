@@ -1,6 +1,0 @@
-H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\DTO\bin\Debug\DTO.dll
-H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\DTO\bin\Debug\DTO.pdb
-H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
-H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
-H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\DTO\obj\Debug\DTO.dll
-H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\DTO\obj\Debug\DTO.pdb
