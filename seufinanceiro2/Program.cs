@@ -1,4 +1,4 @@
-namespace seufinanceiro2
+namespace UI
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace seufinanceiro2
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new frm_principal());
+            Application.Run(new Frm_Principal());
         }
     }
 }

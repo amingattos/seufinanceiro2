@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace UI
 {
-    public partial class frm_LogIn : Form
+    public partial class Frm_LogIn : Form
     {
-        public frm_LogIn()
+        public Frm_LogIn()
         {
             InitializeComponent();
         }
 
-        private void frm_LogIn_Load(object sender, EventArgs e)
+        private void Frm_LogIn_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
