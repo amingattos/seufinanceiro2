@@ -21,5 +21,12 @@ namespace UI
         {
             Application.Exit();
         }
+
+        private void menu_Carteira_Click(object sender, EventArgs e)
+        {
+            Frm_Wallet frm_Wallet = new Frm_Wallet();
+            frm_Wallet.MdiParent = this;
+            frm_Wallet.Show();
+        }
     }
 }

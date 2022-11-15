@@ -91,43 +91,43 @@
             this.pIXToolStripMenuItem,
             this.transferênciaToolStripMenuItem});
             this.menu_Inicio_Novo.Name = "menu_Inicio_Novo";
-            this.menu_Inicio_Novo.Size = new System.Drawing.Size(180, 22);
+            this.menu_Inicio_Novo.Size = new System.Drawing.Size(103, 22);
             this.menu_Inicio_Novo.Text = "Novo";
             // 
             // menu_Inicio_Novo_Carteira
             // 
             this.menu_Inicio_Novo_Carteira.Name = "menu_Inicio_Novo_Carteira";
-            this.menu_Inicio_Novo_Carteira.Size = new System.Drawing.Size(180, 22);
+            this.menu_Inicio_Novo_Carteira.Size = new System.Drawing.Size(143, 22);
             this.menu_Inicio_Novo_Carteira.Text = "Carteira";
             // 
             // depósitoToolStripMenuItem
             // 
             this.depósitoToolStripMenuItem.Name = "depósitoToolStripMenuItem";
-            this.depósitoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.depósitoToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.depósitoToolStripMenuItem.Text = "Depósito";
             // 
             // pagamentoToolStripMenuItem
             // 
             this.pagamentoToolStripMenuItem.Name = "pagamentoToolStripMenuItem";
-            this.pagamentoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pagamentoToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.pagamentoToolStripMenuItem.Text = "Pagamento";
             // 
             // pIXToolStripMenuItem
             // 
             this.pIXToolStripMenuItem.Name = "pIXToolStripMenuItem";
-            this.pIXToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pIXToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.pIXToolStripMenuItem.Text = "PIX";
             // 
             // transferênciaToolStripMenuItem
             // 
             this.transferênciaToolStripMenuItem.Name = "transferênciaToolStripMenuItem";
-            this.transferênciaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.transferênciaToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.transferênciaToolStripMenuItem.Text = "Transferência";
             // 
             // menu_Inicio_Sair
             // 
             this.menu_Inicio_Sair.Name = "menu_Inicio_Sair";
-            this.menu_Inicio_Sair.Size = new System.Drawing.Size(180, 22);
+            this.menu_Inicio_Sair.Size = new System.Drawing.Size(103, 22);
             this.menu_Inicio_Sair.Text = "Sair";
             this.menu_Inicio_Sair.Click += new System.EventHandler(this.menu_Inicio_Sair_Click);
             // 
@@ -136,6 +136,7 @@
             this.menu_Carteira.Name = "menu_Carteira";
             this.menu_Carteira.Size = new System.Drawing.Size(60, 20);
             this.menu_Carteira.Text = "Carteira";
+            this.menu_Carteira.Click += new System.EventHandler(this.menu_Carteira_Click);
             // 
             // menu_Opcoes
             // 
@@ -150,9 +151,11 @@
             this.ClientSize = new System.Drawing.Size(984, 681);
             this.Controls.Add(this.statusStrip_Principal);
             this.Controls.Add(this.menuStrip_Principal);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip_Principal;
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Frm_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seu Financeiro 2.0";
