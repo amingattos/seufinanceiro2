@@ -9,7 +9,7 @@ CREATE PROCEDURE TypeBalanceFind @id_type_balance INT, @type_balance INT, @statu
 CREATE PROCEDURE WalletInsert @id_usr_wallet INT, @name_wallet VARCHAR(50), @account_balance_wallet MONEY AS BEGIN INSERT INTO tbl_wallet (id_usr_wallet, name_wallet, account_balance_wallet) VALUES (@id_usr_wallet, @name_wallet, @account_balance_wallet) END
 CREATE PROCEDURE WalletUpdate @id_wallet INT, @name_wallet VARCHAR(50), @account_balance_wallet MONEY AS BEGIN UPDATE tbl_wallet set name_wallet = @name_wallet, account_balance_wallet = @account_balance_wallet WHERE id_wallet = @id_wallet END
 CREATE PROCEDURE WalletDelete @id_wallet INT AS BEGIN DELETE FROM tbl_wallet WHERE @id_wallet = id_wallet END
-CREATE PROCEDURE WalletFindAll @id_usr_wallet INT AS BEGIN SELECT * FROM tbl_wallet WHERE id_usr_wallet = @id_usr_wallet END
+CREATE PROCEDURE WalletFindAll * FROM tbl_wallet WHERE id_usr_wallet = @id_usr_wallet END
 CREATE PROCEDURE WalletFindName @id_usr_wallet INT, @name_wallet VARCHAR(50) AS BEGIN SELECT * FROM tbl_wallet WHERE name_wallet LIKE '%' + @name_wallet + '%' and id_usr_wallet = @id_usr_wallet END
 CREATE PROCEDURE WalletFindId @id_wallet INT AS BEGIN SELECT * FROM tbl_wallet WHERE id_wallet = @id_wallet END
 CREATE PROCEDURE BalanceInsert @id_type_balance INT, @id_wallet_balance INT, @value_balance MONEY, @date_balance DATE AS BEGIN	INSERT INTO tbl_balance (id_type_balance, id_wallet_balance, value_balance, date_balance) VALUES (@id_type_balance, @id_wallet_balance, @value_balance, @date_balance) END

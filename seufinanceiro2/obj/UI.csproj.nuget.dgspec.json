@@ -4,6 +4,58 @@
     "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\seufinanceiro2\\UI.csproj": {}
   },
   "projects": {
+    "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\BLL\\BLL.csproj": {
+      "restore": {
+        "projectUniqueName": "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\BLL\\BLL.csproj",
+        "projectName": "BLL",
+        "projectPath": "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\BLL\\BLL.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\DAL\\DAL.csproj": {
+                "projectPath": "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\DAL\\DAL.csproj"
+              },
+              "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\DTO\\DTO.csproj": {
+                "projectPath": "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\DTO\\DTO.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\DAL\\DAL.csproj": {
+      "restore": {
+        "projectUniqueName": "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\DAL\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\DAL\\DAL.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\DTO\\DTO.csproj": {
+      "restore": {
+        "projectUniqueName": "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\DTO\\DTO.csproj",
+        "projectName": "DTO",
+        "projectPath": "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\DTO\\DTO.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
     "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\seufinanceiro2\\UI.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -31,7 +83,14 @@
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\BLL\\BLL.csproj": {
+                "projectPath": "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\BLL\\BLL.csproj"
+              },
+              "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\DTO\\DTO.csproj": {
+                "projectPath": "H:\\Arquivos de Programas\\OneDrive\\GitHub\\seufinanceiro2\\DTO\\DTO.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -43,6 +102,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -62,7 +127,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

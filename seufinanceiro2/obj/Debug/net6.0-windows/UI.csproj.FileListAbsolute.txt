@@ -4,6 +4,19 @@ H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\bin\Debug
 H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\bin\Debug\net6.0-windows\UI.runtimeconfig.json
 H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\bin\Debug\net6.0-windows\UI.dll
 H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\bin\Debug\net6.0-windows\UI.pdb
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\bin\Debug\net6.0-windows\BLL.dll
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\bin\Debug\net6.0-windows\DAL.dll
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\bin\Debug\net6.0-windows\DTO.dll
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\bin\Debug\net6.0-windows\BLL.pdb
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\bin\Debug\net6.0-windows\DTO.pdb
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\bin\Debug\net6.0-windows\DAL.pdb
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\bin\Debug\net6.0-windows\DAL.dll.config
 H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\obj\Debug\net6.0-windows\UI.csproj.AssemblyReference.cache
 H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\obj\Debug\net6.0-windows\UI.Frm_LogIn.resources
 H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\obj\Debug\net6.0-windows\UI.Frm_Principal.resources
@@ -13,6 +26,7 @@ H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\obj\Debug
 H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\obj\Debug\net6.0-windows\UI.AssemblyInfoInputs.cache
 H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\obj\Debug\net6.0-windows\UI.AssemblyInfo.cs
 H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\obj\Debug\net6.0-windows\UI.csproj.CoreCompileInputs.cache
+H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\obj\Debug\net6.0-windows\UI.csproj.CopyComplete
 H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\obj\Debug\net6.0-windows\UI.dll
 H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\obj\Debug\net6.0-windows\refint\UI.dll
 H:\Arquivos de Programas\OneDrive\GitHub\seufinanceiro2\seufinanceiro2\obj\Debug\net6.0-windows\UI.pdb

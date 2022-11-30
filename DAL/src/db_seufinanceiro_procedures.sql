@@ -78,7 +78,8 @@ END
 CREATE PROCEDURE WalletFindAll
 	@id_usr_wallet INT
 AS BEGIN
-	SELECT * FROM tbl_wallet WHERE id_usr_wallet = @id_usr_wallet
+	SELECT * FROM tbl_wallet WHERE id_usr_wallet = 1 --@id_usr_wallet
+	SELECT CONVERT(DECIMAL, account_balance_wallet) FROM tbl_wallet WHERE id_usr_wallet = 1   
 END
 
 CREATE PROCEDURE WalletFindName

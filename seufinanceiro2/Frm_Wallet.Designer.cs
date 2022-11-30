@@ -35,14 +35,14 @@
             this.listView_Wallets = new System.Windows.Forms.ListView();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbl_txtSaldoDisp = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_txt_SaldoTotal = new System.Windows.Forms.Label();
             this.lbl_Saldo_Total = new System.Windows.Forms.Label();
+            this.btn_move = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btn_move = new System.Windows.Forms.Button();
             this.dataGrid_Wallet_Select = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -104,6 +104,8 @@
             this.listView_Wallets.Size = new System.Drawing.Size(259, 320);
             this.listView_Wallets.TabIndex = 1;
             this.listView_Wallets.UseCompatibleStateImageBehavior = false;
+            this.listView_Wallets.View = System.Windows.Forms.View.Details;
+            this.listView_Wallets.SelectedIndexChanged += new System.EventHandler(this.listView_Wallets_SelectedIndexChanged);
             // 
             // tableLayoutPanel2
             // 
@@ -123,7 +125,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.lbl_txtSaldoDisp);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(144, 3);
@@ -131,16 +133,16 @@
             this.panel2.Size = new System.Drawing.Size(139, 60);
             this.panel2.TabIndex = 6;
             // 
-            // label3
+            // lbl_txtSaldoDisp
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lbl_txtSaldoDisp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(37, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 15);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Saldo Total";
+            this.lbl_txtSaldoDisp.AutoSize = true;
+            this.lbl_txtSaldoDisp.Location = new System.Drawing.Point(22, 9);
+            this.lbl_txtSaldoDisp.Name = "lbl_txtSaldoDisp";
+            this.lbl_txtSaldoDisp.Size = new System.Drawing.Size(94, 15);
+            this.lbl_txtSaldoDisp.TabIndex = 3;
+            this.lbl_txtSaldoDisp.Text = "Saldo Disponível";
             // 
             // label4
             // 
@@ -191,6 +193,16 @@
             this.lbl_Saldo_Total.Text = "5000";
             this.lbl_Saldo_Total.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btn_move
+            // 
+            this.btn_move.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_move.Location = new System.Drawing.Point(289, 3);
+            this.btn_move.Name = "btn_move";
+            this.btn_move.Size = new System.Drawing.Size(219, 60);
+            this.btn_move.TabIndex = 7;
+            this.btn_move.Text = "&Movimentar";
+            this.btn_move.UseVisualStyleBackColor = true;
+            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -215,16 +227,6 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "5000";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btn_move
-            // 
-            this.btn_move.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_move.Location = new System.Drawing.Point(289, 3);
-            this.btn_move.Name = "btn_move";
-            this.btn_move.Size = new System.Drawing.Size(219, 60);
-            this.btn_move.TabIndex = 7;
-            this.btn_move.Text = "&Movimentar";
-            this.btn_move.UseVisualStyleBackColor = true;
             // 
             // dataGrid_Wallet_Select
             // 
@@ -252,6 +254,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Carteira";
+            this.Load += new System.EventHandler(this.Frm_Wallet_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -272,7 +275,7 @@
         private Button btn_new_wallet;
         private TableLayoutPanel tableLayoutPanel2;
         private Panel panel2;
-        private Label label3;
+        private Label lbl_txtSaldoDisp;
         private Label label4;
         private Panel panel1;
         private Label lbl_txt_SaldoTotal;
